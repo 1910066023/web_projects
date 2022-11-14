@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //创建方式1
+        //var array = new Array('张三',18,'男');
+        //console.log(array);
+        //创建方式二
+        //var b = ['王五', 21];
+        //console.log(b);
+        //console.log(b.length)
+
+        var array = new Array(1,2,3,4,5,5,6,7,8,9);
+        //for(var i = 0; i < array.length; i++){
+         //   if(array[i] == 7){
+           //     console.log('已找到');
+          //  }
+       // }
+
+       for(item in array){
+        console.log(item);
+       }
+    </script>
+</body>
+</html>

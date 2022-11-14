@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mydiv1{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            font-size: 40px;
+        }
+        /* 改变自身的元素的样式 */
+        #mydiv:hover{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        #mydiv2{
+            width: 500px;
+            height: 500px;
+            border: 5px solid black;
+            margin: auto;
+            padding-top: 200px;
+        }
+        #mydiv2:hover #mydiv3{
+            border: 5px solid pink;
+            color: aliceblue;
+        }
+        #mydiv3{
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            margin: auto;
+        }
+        #mydiv3:hover{
+            color: blue;
+        }
+
+        #mydiv4{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        #mydiv5{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top: 10px;
+        }
+        #mydiv4:hover + #mydiv5{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="mydiv1">6666</div> -->
+    <!-- <div id="mydiv2">
+        <div id="mydiv3"></div>
+    </div> -->
+
+    <div id="mydiv4"></div>
+    <div id="mydiv5"></div>
+</body>
+</html>

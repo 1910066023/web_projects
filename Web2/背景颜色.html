@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background是复合属性 */
+            /* background: pink; */
+            background-color: pink;
+        }
+        div{
+            width: 500px;
+            height: 500px;
+            border: 5px solid greenyellow;
+            /* background-image: url("./img/img1/01.png") ; */
+            /* repeat-x表示水平方向平铺，repeat-y表示垂直方向平铺 */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            /* background-repeat: no-repeat;
+            background-size: 50% 50%;
+            background-position: center bottom;
+            background-color: deeppink; */
+            /* background-position/background-size */
+            background: deeppink url("img/02.png") no-repeat center bottom/50% 50% ;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

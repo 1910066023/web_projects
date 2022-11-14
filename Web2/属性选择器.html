@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-bottom: 10px;
+        }
+        /* 属性选择器 */
+        [id]{
+            text-align: center;
+        }
+        [id=sencond]{
+            line-height: 100px;
+        }
+        [class~=sec]{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="first" class="single sec second">111</li>
+        <li>222</li>
+        <li id="second">333</li>
+        <li>444</li>
+        <li id="third">555</li>
+        <li class="single sec">666</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 块级元素 */
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color:red ;
+            margin: 50px;
+            pad: 50px;
+            margin: auto;
+        }
+        span{
+            /* 行内元素 */
+            display: inline;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            font-size: 50px;
+            margin: 50px;
+        }
+        em{
+            /* 行内块元素 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内块元素特征：
+    1. 支持宽度与高度
+    2. 没加宽度的时候，由内容称开宽度：【行内】
+    3. 支持margin，padding样式，但是不支持magin:auto，【行内元素】 -->
+    
+
+    <!-- 块级元素：
+         1. 支持宽高
+         2. 默认的宽度为100%
+         3. 支持margin，padding等css样式,margin: auto;
+    行内块元素：
+         1. 不支持宽高
+         2. 默认内容撑开宽度与高度
+         3. 支持水平方面的magrin，不支持垂直方向的margin
+         4. 支持padding，但是padding的垂直方向上会出现问题，把其他元素覆盖
+         5. 不支持magin:auto，-->
+    <div>我是div的文本</div>
+    <p>我是p的文本</p>
+    <span>我是span的文本</span>
+    <em>我是em的文本</em>
+</body>
+</html>

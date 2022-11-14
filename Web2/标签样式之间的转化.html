@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 块元素转为行内元素 */
+            /* display: inline; */
+            /* 块元素转为行内块元素 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: auto;
+        }
+        span{
+            /* 行内元素转为块元素 */
+            /* display: block; */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        p{
+            /* 样式消失 */
+            /* display: none; */
+            /* 样式显示 */
+            /* display: block; */
+            width: 100px;
+            height: 20px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- 如果同时使用行内块元素的时候，会解析一个空格字符 -->
+    <div>666</div>
+    <span>行内元素</span>
+    <p>123456</p>
+</body>
+</html>
